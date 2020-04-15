@@ -78,9 +78,9 @@ echo "OpenCV installed."
 
 # dlib dependecy
 echo "Downloading dlib"
-wget http://dlib.net/files/dlib-19.13.tar.bz2;
-tar xf dlib-19.13.tar.bz2;
-cd dlib-19.13;
+wget http://dlib.net/files/dlib-19.14.tar.bz2;
+tar xf dlib-19.14.tar.bz2;
+cd dlib-19.14;
 mkdir -p build;
 cd build;
 echo "Installing dlib"
@@ -89,7 +89,7 @@ cmake --build . --config Release;
 sudo make install;
 sudo ldconfig;
 cd ../..;    
-rm -r dlib-19.13.tar.bz2
+rm -r dlib-19.14.tar.bz2
 echo "dlib installed"
 
 # OpenFace installation
